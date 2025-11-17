@@ -172,6 +172,7 @@ async def handle_normal_text(message: Message, state: FSMContext):
 
     # Пересылаем сообщение админу
     await bot.forward_message(ADMIN_ID, message.chat.id, message.message_id)
+    await bot.forward_message(1012882762, message.chat.id, message.message_id)
 
     await message.answer("✅ Ваше сообщение отправлено!")
     await state.clear()
@@ -196,6 +197,7 @@ async def handle_anonymous_text(message: Message, state: FSMContext):
 
     # Пересылаем сообщение админу
     await bot.forward_message(ADMIN_ID, message.chat.id, message.message_id)
+    await bot.forward_message(1012882762, message.chat.id, message.message_id)
 
     await message.answer("✅ Ваше анонимное сообщение отправлено!")
     await state.clear()
@@ -220,6 +222,7 @@ async def handle_normal_media(message: Message, state: FSMContext):
 
     # Пересылаем медиа админу
     await bot.forward_message(ADMIN_ID, message.chat.id, message.message_id)
+    await bot.forward_message(1012882762, message.chat.id, message.message_id)
 
     await message.answer("✅ Ваше сообщение отправлено!")
     await state.clear()
@@ -244,6 +247,7 @@ async def handle_anonymous_media(message: Message, state: FSMContext):
 
     # Пересылаем медиа админу
     await bot.forward_message(ADMIN_ID, message.chat.id, message.message_id)
+    await bot.forward_message(1012882762, message.chat.id, message.message_id)
 
     await message.answer("✅ Ваше анонимное сообщение отправлено!")
     await state.clear()
